@@ -1,1 +1,110 @@
+/* Déclaration de la police Modernist avec différentes variantes */
+
+/* Regular */
+@font-face {
+  font-family: 'Modernist';
+  src: url('fonts/Sk-Modernist-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Modernist';
+  src: url('fonts/Sk-Modernist-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Mono */
+@font-face {
+  font-family: 'Modernist';
+  src: url('fonts/Sk-Modernist-Mono.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Modernist';
+  font-feature-settings: 'liga' off;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Modernist', sans-serif;
+  line-height: 1.6;
+  background-color: #170020;
+  color: #FFFDF2;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #170020;
+  border-bottom: 1px solid #BB03FF;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #BB03FF; /* Accentuation */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #FFFDF2;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 2px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #BB03FF; /* Accentuation au survol */
+  border-bottom: 2px solid #BB03FF;
+}
+
+/* Sections */
+.section {
+  padding: 0.5rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Titres */
+.section h1, .section h2 {
+  color: #BB03FF;
+  margin-bottom: 1rem;
+}
+
+/* Inline accentué dans les paragraphes */
+.titre-inline {
+  color: #02E0F0;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #170020;
+  border-top: 1px solid #BB03FF;
+  font-size: 0.9rem;
+  color: #FFFDF2;
+}
 
